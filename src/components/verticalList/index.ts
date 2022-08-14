@@ -1,1 +1,0 @@
-export { VerticalList } from './VerticalList';
