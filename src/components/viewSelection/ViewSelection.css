@@ -1,0 +1,9 @@
+.selected-text {
+  background-color: #add6ff;
+  color: transparent;
+  border-radius: 3px;
+}
+
+.view-selection {
+  position: absolute;
+}

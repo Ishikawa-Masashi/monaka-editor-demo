@@ -1,0 +1,6 @@
+.lines-content {
+  position: absolute;
+  width: 1000000px;
+  height: 1000000px;
+  user-select: none;
+}

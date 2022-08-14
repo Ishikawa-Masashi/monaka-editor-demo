@@ -1,0 +1,9 @@
+.vertical-list-container {
+  overflow: hidden;
+  user-select: none;
+}
+
+.vertical-list {
+  width: 100%;
+  position: relative;
+}

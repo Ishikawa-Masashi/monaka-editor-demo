@@ -1,0 +1,8 @@
+.find-widget {
+  position: absolute;
+  width: 419px;
+  box-shadow: 0 0 8px 2px rgb(0 0 0 / 16%);
+  background-color: #f3f3f3;
+  z-index: 200;
+  /* pointer-events: none; */
+}

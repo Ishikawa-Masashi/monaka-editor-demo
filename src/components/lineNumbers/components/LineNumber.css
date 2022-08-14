@@ -1,0 +1,17 @@
+.line-number-container {
+  display: flex;
+  position: absolute;
+}
+
+.line-number-container .decoration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.5s;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.margin-view-overlays:hover .decoration {
+  opacity: 1;
+}

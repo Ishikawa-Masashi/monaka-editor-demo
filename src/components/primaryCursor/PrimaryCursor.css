@@ -1,0 +1,21 @@
+.primary-cursor-container {
+  display: flex;
+  position: absolute;
+  pointer-events: none;
+}
+
+.primary-cursor::after {
+  content: '';
+  background-color: black;
+  width: 2px;
+  height: 100%;
+  position: absolute;
+}
+
+.right-to-left-vertical-writing .primary-cursor::after {
+  content: '';
+  background-color: black;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+}

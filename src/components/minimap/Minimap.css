@@ -1,0 +1,77 @@
+.minimap-container {
+  position: absolute;
+  background-color: #fff;
+  overflow: hidden;
+  user-select: none;
+}
+
+.minimap-shadow-visible {
+  box-shadow: #dddddd -6px 0 6px -6px inset;
+  height: 100%;
+  position: absolute;
+  left: -6px;
+  width: 6px;
+}
+
+.right-to-left-vertical-writing .minimap-shadow-visible {
+  box-shadow: #dddddd 0 -6px 6px -6px inset;
+  width: 100%;
+  height: 6px;
+  top: -6px;
+  left: unset;
+}
+
+.minimap {
+  position: absolute;
+  white-space: nowrap;
+  font-size: 10px;
+}
+
+.right-to-left-vertical-writing .minimap {
+  transform-origin: right top;
+}
+
+.minimap-slider {
+  position: absolute;
+  width: 100%;
+  background: rgba(100, 100, 100, 0.2);
+  z-index: 100;
+}
+
+.right-to-left-vertical-writing .minimap-slider {
+  height: 100%;
+}
+
+.minimap-container::-webkit-scrollbar {
+  background: transparent;
+  width: 40px;
+}
+
+.minimap-container::-webkit-scrollbar-corner {
+  display: none;
+}
+
+/* スクロールバー上下左右末端のボタン */
+.minimap-container::-webkit-scrollbar-button {
+  /* width:10px;
+  height:10px;
+  background:#666; */
+  display: none;
+}
+
+.minimap-container::-webkit-scrollbar-thumb {
+  background: hsla(0, 0%, 39.2%, 0.4);
+  width: 100px;
+  height: 200px;
+}
+
+.minimap-container:hover::-webkit-scrollbar-thumb {
+  /* background: hsla(0, 0%, 39.2%, 0.4); */
+  background: hsla(0, 0%, 39.2%, 0.7);
+  width: 100px;
+  height: 200px;
+}
+
+.minimap-container:hover::-webkit-scrollbar {
+  background: transparent;
+}

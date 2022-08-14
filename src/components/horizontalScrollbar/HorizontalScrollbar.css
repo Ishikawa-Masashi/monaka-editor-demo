@@ -1,0 +1,65 @@
+.horizontal-scrollbar {
+  position: absolute;
+  overflow: hidden;
+  box-sizing: border-box;
+  border: 1px solid hsla(0, 0%, 39.2%, 0.4);
+  z-index: 101;
+  /* background-color: #fff; */
+
+  bottom: 0;
+}
+
+.horizontal-scrollbar .overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10000;
+}
+
+.horizontal-scrollbar .slider {
+  height: 100%;
+  background: hsla(0, 0%, 39.2%, 0.4);
+  position: absolute;
+}
+
+.horizontal-scrollbar:hover .slider {
+  height: 100%;
+  background: hsla(0, 0%, 39.2%, 0.7);
+}
+
+.horizontal-scrollbar-container {
+  position: absolute;
+  overflow: scroll;
+  box-sizing: border-box;
+  /* border: 1px solid hsla(0, 0%, 39.2%, 0.4); */
+}
+
+.horizontal-scrollbar-container::-webkit-scrollbar {
+  background: transparent;
+}
+
+.horizontal-scrollbar-container::-webkit-scrollbar-corner {
+  display: none;
+}
+
+/* スクロールバー上下左右末端のボタン */
+.horizontal-scrollbar-container::-webkit-scrollbar-button {
+  /* width:10px;
+    height:10px;
+    background:#666; */
+  display: none;
+}
+
+.horizontal-scrollbar-container::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+.horizontal-scrollbar-container:hover::-webkit-scrollbar-thumb {
+  background: hsla(0, 0%, 39.2%, 0.4);
+}
+
+.horizontal-scrollbar-container:hover::-webkit-scrollbar {
+  background: transparent;
+}

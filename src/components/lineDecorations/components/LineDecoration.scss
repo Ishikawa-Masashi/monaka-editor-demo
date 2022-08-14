@@ -1,0 +1,11 @@
+.line-decoration {
+  position: absolute;
+  pointer-events: none;
+
+  & .folding-collapsed {
+    border: 1px solid;
+    pointer-events: auto;
+    z-index: 100;
+    position: absolute;
+  }
+}
