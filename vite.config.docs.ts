@@ -2,6 +2,7 @@ import { defineConfig } from 'vite';
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: './',
   /**
    * [plugin:vite:css] '~antd/dist/antd.less' wasn't found.
    * less import no support webpack alias '~'
